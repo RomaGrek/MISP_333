@@ -1,6 +1,6 @@
 package com.company;
 
-import commands.CommandPusk;
+import commands.*;
 import general.HistoryPoint;
 
 import java.io.BufferedReader;
@@ -11,7 +11,10 @@ public class Main {
 
     public static void main(String[] args) throws IOException {
         HistoryPoint historyPoint = new HistoryPoint();
-
+        Exit exit = new Exit();
+        Help help = new Help();
+        History history = new History();
+        Shot shot = new Shot();
         while (true) {
             System.out.println("Введите вашу команду, используйте \"help\" что бы получить список команд");
             System.out.print(">>>");

@@ -13,7 +13,6 @@ public class CommandPusk {
         commands.put(name, commandDo);
     }
 
-
     public static void doing(String words, HistoryPoint historyPoint) {
         String[] partsWords = words.split(" ");
         if (words.isEmpty()) {
@@ -32,14 +31,18 @@ public class CommandPusk {
             String y = partsWords[2];
             String r = partsWords[3];
             if (commandDo != null) {
-                commandDo.doing(x, y, r, historyPoint);
+                String info = Validate.validate(partsWords);
+                if (info.equals("OK")) {
+                    commandDo.doing(x, y, r, historyPoint);
+                }else {
+                    System.out.println(info);
+                }
             } else {
                 System.out.println("Команды не существует");
             }
         } else {
             System.out.println("Невенрный ввод команды");
         }
-
     }
 
 
