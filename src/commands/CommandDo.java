@@ -1,6 +1,8 @@
 package commands;
 
-public interface CommandDo {
+import general.HistoryPoint;
 
-    void doing(String name, GeneralCollection generalCollection);
+public interface CommandDo {
+    void doing (String x, String y, String r, HistoryPoint historyPoint);
+
 }

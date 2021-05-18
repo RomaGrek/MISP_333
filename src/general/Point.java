@@ -4,6 +4,7 @@ public class Point {
     private double x;
     private double y;
     private double r;
+    private double String;
 
     public Point (double x, double y, double r) {
         this.x = x;
@@ -34,4 +35,6 @@ public class Point {
     public void setR(double r) {
         this.r = r;
     }
+
+    public void checkPenetration;
 }

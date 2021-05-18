@@ -1,4 +1,5 @@
 package commands;
 
-public class Exit {
+public class Exit{
+
 }
